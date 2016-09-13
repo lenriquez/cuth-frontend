@@ -24,7 +24,6 @@ export class TableComponent {
     }
   ];
 
-  //keys = [ ['Google','felipe096','', ''], ['Facebook','felipe096@gmail.com','www.facebook.com', 'N/A'] ];
-  headers = ['Title', 'UserName', 'URL', 'Comments'];
+  headers = ['Title', 'UserName', 'URL', 'Comments', 'Edit'];
   constructor() { console.clear(); }
 }
