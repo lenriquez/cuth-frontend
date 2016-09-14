@@ -13,17 +13,17 @@ import { Component, Input } from '@angular/core';
 })
 
 export class TableComponent {
-  @Input('key-table') keys;
 
    keys = [
-    { title: 'Gmail' ;
-      userName: 'felipe096';
-      url: '';
-      password: '******';
-      comments: 'N/A';
+    { title: 'Gmail',
+      userName: 'felipe096',
+      url: '',
+      password: '******',
+      comments: 'N/A'
     }
   ];
 
   headers = ['Title', 'UserName', 'URL', 'Comments', 'Edit'];
   constructor() { console.clear(); }
 }
+

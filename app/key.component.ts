@@ -19,16 +19,18 @@ export class Key {
       <button type="button" class="btn btn-default" (click)="onEdit(key)">
         Edit
       </button>
-      <button type="button" class="btn btn-danger" (click)="onDelete(key)">
+      <button type="button" class="btn btn-danger" (click)="c.show()">
         Delete
       </button>
     </td>
+    <key-edit #child="smModal"></key-edit>
   `
 })
 
 export class KeyComponent {
   @Input('key') key;
   onEdit(key: Key): void {
+    //smModal.show();
     alert("Edit");
   }
   onDelete(key: Key): void{
