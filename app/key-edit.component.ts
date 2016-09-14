@@ -21,11 +21,10 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
       </div>
     </div>
   </div>`,
-  exportAs: 'smModal' 
 })
 
 export class KeyEditComponent {
-  @ViewChild('smModal') smModal
+    @ViewChild('smModal') smModal
     show(){   
     this.smModal.show(); 
   }

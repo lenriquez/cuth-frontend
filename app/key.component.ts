@@ -16,14 +16,14 @@ export class Key {
     <td>{{key.url}}</td>
     <td>{{key.comments}}</td>
     <td>
-      <button type="button" class="btn btn-default" (click)="onEdit(key)">
+      <button type="button" class="btn btn-default" (click)="key.show()">
         Edit
       </button>
-      <button type="button" class="btn btn-danger" (click)="c.show()">
+      <button type="button" class="btn btn-danger" (click)="keyEdit.show()">
         Delete
       </button>
     </td>
-    <key-edit #child="smModal"></key-edit>
+    <key-edit #keyEdit ></key-edit>
   `
 })
 
