@@ -16,10 +16,10 @@ export class Key {
     <td>{{key.url}}</td>
     <td>{{key.comments}}</td>
     <td>
-      <button type="button" class="btn btn-default" (click)="key.show()">
+      <button type="button" class="btn btn-default" (click)="keyEdit.show(key)">
         Edit
       </button>
-      <button type="button" class="btn btn-danger" (click)="keyEdit.show()">
+      <button type="button" class="btn btn-danger" (click)="onDelete(key)">
         Delete
       </button>
     </td>
@@ -29,10 +29,7 @@ export class Key {
 
 export class KeyComponent {
   @Input('key') key;
-  onEdit(key: Key): void {
-    //smModal.show();
-    alert("Edit");
-  }
+
   onDelete(key: Key): void{
     alert("Delete");
   }

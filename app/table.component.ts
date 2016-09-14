@@ -23,7 +23,7 @@ export class TableComponent {
     }
   ];
 
-  headers = ['Title', 'UserName', 'URL', 'Comments', 'Edit'];
+  headers = ['Title', 'UserName', 'URL', 'Comments', 'Actions'];
   constructor() { console.clear(); }
 }
 
