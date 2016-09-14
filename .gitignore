@@ -6,3 +6,13 @@ node_modules
 jspm_packages
 bower_components
 npm-debug.log*
+
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
