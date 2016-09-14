@@ -16,7 +16,7 @@ export class Key {
     <td>{{key.url}}</td>
     <td>{{key.comments}}</td>
     <td>
-      <button type="button" class="btn btn-default" (click)="keyEdit.show(key)">
+      <button type="button" class="btn btn-default" (click)="keyEdit.showEdit(key)">
         Edit
       </button>
       <button type="button" class="btn btn-danger" (click)="onDelete(key)">

@@ -13,7 +13,7 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
           <button type="button" class="close" aria-label="Close" (click)="smModal.hide()">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title">Editing {{key.title}}</h4>
+          <h4 class="modal-title">{{title}} {{key.title}}</h4>
         </div>
         <div class="modal-body text-left">
           <form name=key-edit-form>
@@ -31,7 +31,7 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
             </div>
             <div class="form-group">
               <label>Password: </label>
-              <input [(ngModel)]="key.password" name="password" class="form-control"/>
+              <input type="password" [(ngModel)]="key.password" name="password" class="form-control"/>
             </div>
             <div class="form-group">
               <label>Comments: </label>
@@ -40,8 +40,7 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
             </div>
           </form>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" (click)="smModal.hide()">Close</button>
           </div>
         </div>
       </div>
@@ -50,12 +49,26 @@ import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
 })
 
 export class KeyEditComponent {
-    @ViewChild('smModal') smModal;
-    @Input('key') key;
+  @ViewChild('smModal') smModal;
 
-    key = {};
-    show(key){
-      this.key = key
-      this.smModal.show(); 
+  key = {}; //TODO: There should be a better way to do this
+  title = "";
+  showEdit(key){
+    this.key = key
+    this.title = "Editing"
+    this.smModal.show(); 
+  }
+
+  showNew(){
+    this.title = "Creating"
+    this.key = { 
+      title: '',
+      userName: '',
+      url: '',
+      password: '',
+      comments: ''
+    };
+    this.smModal.show();
+    return this.key;
   }
 }
