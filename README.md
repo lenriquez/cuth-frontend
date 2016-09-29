@@ -1,6 +1,6 @@
 # README
 
-#Cuth
+#Cuth-Frontend
 
 A Frontend for Cuth a Cloud Key Pass
 
