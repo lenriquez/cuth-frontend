@@ -2,7 +2,7 @@
 
 #Cuth-Frontend
 
-A Frontend for Cuth a Cloud Key Pass
+A Frontend for Cuth, a Cloud Key Pass
 
 ### Deployment instructions
 
