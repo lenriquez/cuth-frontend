@@ -1,5 +1,5 @@
 {
-  "name": "cuth",
+  "name": "cuth-ui",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -42,5 +42,9 @@
     "tslint": "3.13.0",
     "typescript": "~2.0.3",
     "webdriver-manager": "10.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lenriquez/cuth-ui.git"
   }
 }
