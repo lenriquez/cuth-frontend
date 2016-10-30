@@ -9,7 +9,7 @@ export class Key {
 }
 
 @Component({
-  selector: 'app-key',
+  selector: 'key',
   templateUrl: './key.component.html',
   styleUrls: ['./key.component.css']
 })

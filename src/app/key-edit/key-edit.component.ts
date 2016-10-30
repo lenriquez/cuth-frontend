@@ -1,8 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { ModalDirective } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
-  selector: 'app-key-edit',
+  selector: 'key-edit',
   templateUrl: './key-edit.component.html',
   styleUrls: ['./key-edit.component.css']
 })
