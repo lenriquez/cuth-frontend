@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 export class Key {
-  title: string ;
+  title: string;
   userName: string;
   url: string;
   password: string;
@@ -9,7 +9,7 @@ export class Key {
 }
 
 @Component({
-  selector: 'key',
+  selector: '[key]',
   templateUrl: './key.component.html',
   styleUrls: ['./key.component.css']
 })
